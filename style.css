@@ -1,0 +1,134 @@
+*{
+  box-sizing: border-box;
+}
+.header {
+display: flex;
+font-family: 'Roboto';
+background-color: #007ef3;
+color: #fff;
+height: 75px;
+width: 100%;
+padding-left: 20px;
+padding-top: 20px;
+padding-right: 20px;
+justify-content: space-between;
+}
+.header button{
+  background-color:  #007ef3;
+  border:solid;
+  border-radius: 5px;
+  border-color:  white;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 0px;
+}
+
+.menu {
+  align-items: center;
+  justify-content: center;
+}
+div ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 15px;
+}
+ul li {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 15px;
+}
+ul li a:hover {
+  background-color: #0a71d1;
+}
+.partie1 {
+  width: 100%;
+  height: 700px;
+  font-family: 'Roboto';
+  background-color:#007ef3;
+  color: white; 
+  margin: 0px;
+  padding-left: 200px;
+  padding-top: 150px;
+  background-image: url("images/man_working.png");
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+h1{
+  font-size: 70px;
+}
+.partie1 button {
+  background-color:  #007ef3;
+  border-radius: 5px;
+  border: solid;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  padding: 15px 50px;
+}
+.partie2 {
+  width: 100%;
+  height: 320px;
+  padding-top: 30px;
+  font-family: 'Roboto';
+  font-size: 15px;
+  text-align: center;
+}
+h2{
+  font-size: 30px;
+  font-style: normal;
+}
+.today {
+  background-color: lightgray;
+  width: 100%;
+  height: 260px;
+  font-family: 'Roboto';
+  font-size: 15px;
+  text-align: center;
+  padding-top: 40px;
+  border-top-style: outset;
+}
+h3{
+  font-size: 20px;
+}
+.today button {
+  background-color:  #007ef3;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+ 
+}
+.flex-container {
+  display: flex;
+  height: 170px;
+  padding-top: 35px;
+  background-color:#007ef3;
+  justify-content: center;
+  border-top-style: outset;
+}
+.flex-container > div {
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+}
+.footer{
+  height: 240px;
+  padding-top: 50px;
+  padding-left: 675px;
+  background-color: white
+}
+
+
+  
