@@ -1,20 +1,24 @@
 *{
   box-sizing: border-box;
 }
+body{
+  font-family: 'Roboto';
+  font-size: 15px;
+}
 .header {
+line-height: 76px;
 display: flex;
-font-family: 'Roboto';
-background-color: #007ef3;
 color: #fff;
-height: 75px;
+height: 64px;
 width: 100%;
 padding-left: 20px;
 padding-top: 20px;
 padding-right: 20px;
 justify-content: space-between;
+position: absolute;
 }
 .header button{
-  background-color:  #007ef3;
+  background-color: transparent;
   border:solid;
   border-radius: 5px;
   border-color:  white;
@@ -24,17 +28,13 @@ justify-content: space-between;
   padding: 10px 20px;
   margin: 0px;
 }
-
 .menu {
   align-items: center;
   justify-content: center;
 }
 div ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
-  font-size: 15px;
 }
 ul li {
   float: left;
@@ -44,11 +44,12 @@ ul li {
 }
 ul li a:hover {
   background-color: #0a71d1;
+  padding: 15px;
+  display: inline-block;
 }
 .partie1 {
   width: 100%;
-  height: 700px;
-  font-family: 'Roboto';
+  height: 760px;
   background-color:#007ef3;
   color: white; 
   margin: 0px;
@@ -62,7 +63,7 @@ h1{
   font-size: 70px;
 }
 .partie1 button {
-  background-color:  #007ef3;
+  background-color: transparent;
   border-radius: 5px;
   border: solid;
   color: white;
@@ -75,23 +76,102 @@ h1{
 .partie2 {
   width: 100%;
   height: 320px;
-  padding-top: 30px;
-  font-family: 'Roboto';
+  padding-top: 65px;
   font-size: 15px;
   text-align: center;
+  line-height: 25px;
 }
 h2{
-  font-size: 30px;
-  font-style: normal;
+  font-size: 35px;
+  font-style: bold;
+}
+.wrapper {
+  background-color: #007ef3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  color: white;
+  height: 800px;
+  width: 100%;
+}
+.one {
+  grid-column: 1 / 2;
+  grid-row: 1;
+  line-height: 25px;
+  padding-top: 25px;
+  padding-left: 175px;
+}
+.two {
+  grid-column: 2 / 2;
+  grid-row: 1 ;
+  background-image: url("images/glenn-carstens-peters.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: auto;
+}
+.three {
+  grid-column: 1 / 2;
+  grid-row: 2;
+  background-image: url("images/group.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 15px;
+  background-color: #0067c7
+}
+.four {
+  grid-column: 2 / 2;
+  grid-row: 2;
+  line-height: 25px;
+  padding-top: 25px;
+  padding-left: 100px;
+}
+h5{
+  font-size: 40px;
+}
+h6{
+  font-size: 40px;
+}
+
+
+
+.contact{
+  width: 100%;
+  height: 800px;
+  background-color: white;
+  text-align: left;
+  padding-left: 200px;
+  padding-top: 25px;
+  background-image: url("images/formulaire_temporaire.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+.boxgrise {
+  background-color: #f4f4f4;
+  padding: 10px;
+  width: 300px;
+  height: 150px;
+  border-radius: 3px;
+  color: #007ef3;
+}
+.boxbleu {
+  background-color: #dff0ff;
+  padding: 10px;
+  width: 300px;
+  height: 200px;
+  border-radius: 3px;
+  color: black;
+}
+
+h4{
+  font-size: 40px;
 }
 .today {
-  background-color: lightgray;
+  background-color: #f4f4f4;
   width: 100%;
   height: 260px;
-  font-family: 'Roboto';
   font-size: 15px;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 65px;
   border-top-style: outset;
 }
 h3{
@@ -113,8 +193,8 @@ h3{
 .flex-container {
   display: flex;
   height: 170px;
-  padding-top: 35px;
-  background-color:#007ef3;
+  padding-top: 55px;
+  background-color: white;
   justify-content: center;
   border-top-style: outset;
 }
@@ -125,9 +205,10 @@ h3{
 }
 .footer{
   height: 240px;
-  padding-top: 50px;
+  padding-top: 65px;
   padding-left: 675px;
-  background-color: white
+  background-color: white;
+  border-top-style: outset;
 }
 
 
